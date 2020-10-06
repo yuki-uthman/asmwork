@@ -11,7 +11,10 @@ _start:
 	nop
 ; Put your experiments between the two nops...
 
-move eax, 07FFFFFFh
+mov eax, 0FFFFFFFFh
+mov ebx, 02Dh
+
+dec ebx
 inc eax
 
 ; Put your experiments between the two nops...

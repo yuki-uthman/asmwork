@@ -11,8 +11,9 @@ _start:
 	nop
 ; Put your experiments between the two nops...
 
-move eax, 07FFFFFFh
-inc eax
+        mov eax, 5
+DoMore: dec eax
+        jnz DoMore
 
 ; Put your experiments between the two nops...
 	nop

@@ -11,8 +11,10 @@ _start:
 	nop
 ; Put your experiments between the two nops...
 
-move eax, 07FFFFFFh
-inc eax
+; "Eat at Joe's" is stored staring at 0x804a000
+mov eax, 804a001H 
+mov ebx, [eax]
+
 
 ; Put your experiments between the two nops...
 	nop
