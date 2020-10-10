@@ -5,5 +5,9 @@
 [[string]]
 [[read]]
 
+= Control Flow =
+compare
+jump
+loop
 
 
