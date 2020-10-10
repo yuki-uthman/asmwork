@@ -1,0 +1,10 @@
+{{{asm
+
+byte    db  012h
+word    dw  01234h 
+double  dd  012345678h 
+
+
+}}}
+
+

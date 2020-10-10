@@ -1,0 +1,24 @@
+
+Read one char
+{{{asm
+
+section .bss
+Buff resb 1
+
+mov eax, 3    ; sys_read
+mov ebx, 0    ; standard input
+mov ecx, Buff ; pass the address of the buffer to read
+mov edx, 1    ; tell sys_read to read one char
+int 80h
+
+; after reading if it reaches the EOF eax == 0
+}}}
+
+
+Read one line
+{{{asm
+
+
+
+
+}}}

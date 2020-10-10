@@ -1,0 +1,36 @@
+
+Declaration
+{{{asm
+
+10 is \n in Linux
+EatMsg: db "Eat at Joe's", 10
+EatLen: equ $-EatMsg
+
+Concatenate: db "Hello" , " ", "World", 10
+
+TwoLine: db "Eat at Joe's", 10, "It's the best!", 10
+
+}}}
+
+
+How to print?
+{{{asm
+
+mov, eax, 4   ; system write call
+mov, ebx, 1   ; standard output
+mov, ecx, 123 ; starting address of the string
+mov, edx, 16  ; 16 characters
+int 80h       ; make system call
+
+}}}
+
+
+Exit the program
+{{{asm
+
+mov, eax, 1 ; exit call
+mov, ebx, 0 ; exit value
+int 80h
+
+}}}
+

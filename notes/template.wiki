@@ -1,0 +1,26 @@
+{{{asm
+
+section .bss  ; uninitialized data
+
+
+section .data ; initialized data
+
+
+section .text ; main code
+
+
+global _start
+
+_start:
+        nop
+
+; Main code 
+;
+;
+
+Done: 
+        mov, eax, 1 
+        mov, ebx, 0 
+        int 80h
+
+}}}
